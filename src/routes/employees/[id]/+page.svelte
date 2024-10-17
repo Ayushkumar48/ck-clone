@@ -1,12 +1,11 @@
-<!-- src/routes/employees/[id]/+page.svelte -->
 <script>
 	import { page } from '$app/stores';
+	import EmployeeDetails from '../../../lib/employeeId/EmployeeDetails/EmployeeDetails.svelte';
+	import Tasks from '../../../lib/employeeId/EmployeeDetails/Tasks.svelte';
 	let employeeId = $page.params.id;
-
-	// Fetch or display employee-specific data using employeeId
 </script>
 
-<article>
-	<h1>Employee Details for {employeeId}</h1>
-	<!-- Your content here -->
+<article class="flex h-full w-full flex-col gap-6">
+	<EmployeeDetails {employeeId} />
+	<Tasks />
 </article>

@@ -4,7 +4,7 @@
 	import NavIcon from './NavIcon.svelte';
 	import HelloText from './HelloText.svelte';
 	let navlis = ['About', 'Tools', 'Help'];
-	let navIcons = ['message', 'gift', 'setting'];
+	let navIcons = ['fa-regular fa-message', 'fa-solid fa-gift', 'fa-solid fa-gear'];
 </script>
 
 <div
